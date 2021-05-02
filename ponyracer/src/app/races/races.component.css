@@ -1,5 +1,18 @@
+:host {
+    display: block;
+    width: 10rem;
+    margin: auto;
+}
 button {
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-top: 10px;
 }

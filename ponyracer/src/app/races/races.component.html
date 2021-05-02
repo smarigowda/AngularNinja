@@ -1,6 +1,14 @@
 <div *ngIf="races.length > 0; else empty">
   <h2>{{ races.length }} Races</h2>
 </div>
+<ul>
+  <li
+    *ngFor="let race of races; index as i; even as isEven"
+    [style.color]="isEven ? 'green' : 'red'"
+  >
+    {{ i }} - {{ race.name }}
+  </li>
+</ul>
 <button (click)="refreshRacesList($event)">Refresh Races List</button>
 <ng-template #empty>
   <h2>No Races</h2>
