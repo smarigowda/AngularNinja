@@ -1,1 +1,7 @@
-<h2>Races</h2>
+<div *ngIf="races.length > 0; else empty">
+  <h2>{{ races.length }} Races</h2>
+</div>
+<button (click)="refreshRacesList($event)">Refresh Races List</button>
+<ng-template #empty>
+  <h2>No Races</h2>
+</ng-template>
