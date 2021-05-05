@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { MockRaceService } from './mock.race.service';
 import { RaceService } from './race.service';
 import { RacesComponent } from './races/races.component';
-const IS_PROD = false;
-// const IS_PROD = true;
+// const IS_PROD = false;
+const IS_PROD = true;
 @NgModule({
   declarations: [AppComponent, RacesComponent],
   imports: [BrowserModule],

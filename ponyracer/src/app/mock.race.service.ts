@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
 export class MockRaceService {
   constructor() {}
   list(): Array<any> {
-    return [{ name: 'London' }];
+    return [{ name: 'London Mock Race' }];
   }
 }

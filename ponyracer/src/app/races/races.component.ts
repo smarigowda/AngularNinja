@@ -15,6 +15,7 @@ export class RacesComponent implements OnInit {
     console.log(event);
     // this.races = [{ name: 'London' }, { name: 'Lyon' }];
     this.races = this.raceService.list();
+    console.log(this.races);
   }
 
   ngOnInit(): void {}

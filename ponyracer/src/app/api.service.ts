@@ -7,7 +7,7 @@ export class ApiService {
   constructor() {}
 
   get(path: string): Array<any> {
-    // call to backend, later
-    return [{ name: 'Reading' }, { name: 'Mandya' }];
+    // call backend to get races data, later
+    return [{ name: 'Reading - Real Race' }, { name: 'Mandya - Real Race' }];
   }
 }
