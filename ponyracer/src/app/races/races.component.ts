@@ -17,6 +17,9 @@ export class RacesComponent implements OnInit {
     this.races = this.raceService.list();
     console.log(this.races);
   }
+  asyncGreeting = new Promise((resolve) => {
+    window.setTimeout(() => resolve('Hello Async !'), 5000);
+  });
 
   ngOnInit(): void {}
 }

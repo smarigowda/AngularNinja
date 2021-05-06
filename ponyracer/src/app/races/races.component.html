@@ -9,6 +9,9 @@
     {{ i }} - {{ race.name }}
   </li>
 </ul>
+<h2>Pipes</h2>
+<p>{{ races | slice: 0:1 | json }}</p>
+<p>Async Greeting ---> {{ asyncGreeting | async }}</p>
 <button (click)="refreshRacesList($event)">Refresh Races List</button>
 <ng-template #empty>
   <h2>No Races</h2>
